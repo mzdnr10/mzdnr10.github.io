@@ -16,20 +16,6 @@
 
 	<link rel="icon" href="images/favicon.jpg">
 
-	<!--
-      //////////////////////////////////////////////////////
-
-      FREE HTML5 TEMPLATE
-      DESIGNED & DEVELOPED by FREEHTML5.CO
-
-      Website: 		http://freehtml5.co/
-      Email: 			info@freehtml5.co
-      Twitter: 		http://twitter.com/fh5co
-      Facebook: 		https://www.facebook.com/fh5co
-
-      //////////////////////////////////////////////////////
-       -->
-
 	<link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Estonia" rel="stylesheet">
@@ -432,8 +418,18 @@
 		const nama1 = urlParams.get('nama1') || "";
 		const nama2 = urlParams.get('nama2') || "";
 
-		// Gabungkan nama1 & nama2 dengan separator "&" jika ada
-		const namaTamu = [nama1, nama2].filter(Boolean).join(" & ");
+		// Gabungkan nama1 & nama2 dengan separator "&" jika adalet namaTamu = "";
+
+		if (nama1 && nama2) {
+			namaTamu = `${nama1} & ${nama2}`;
+		} else if (nama1) {
+			namaTamu = `${nama1} & Partner`;
+		} else if (nama2) {
+			namaTamu = `${nama2} & Partner`;
+		} else {
+			namaTamu = "Tamu Undangan";
+		}
+
 
 		// Buat elemen <p> dan masukkan ke dalam #undangan
 		const undanganHTML = `

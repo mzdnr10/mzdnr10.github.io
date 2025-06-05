@@ -4,15 +4,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Herdiana & Arbainah</title>
+	<title>Herdi & Arbainah</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Herdiana & Arbainah" />
+	<meta name="description" content="Herdi & Arbainah" />
 	<meta name="keywords" content="wedding, wedding invitation, invitation, the wedding" />
 
 	<!-- Facebook and Twitter integration -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Herdiana & Arbainah" />
-	<meta property="og:description" content="The Wedding of Hairul Lana & Tahta Ramadhani" />
+	<meta property="og:title" content="Herdi & Arbainah" />
+	<meta property="og:description" content="The Wedding of Herdi & Arbainah" />
 
 	<!-- <link rel="icon" href="images/favicon.jpg"> -->
 
@@ -173,46 +173,24 @@
 				</div>
 				<div class="couple-wrap animate-box">
 					<div class="couple-half">
-						<div class="groom">
-							<img src="images/TahtaRamadhani.jpg" alt="groom" class="img-responsive">
-						</div>
 						<div class="desc-groom">
-							<h3>Tahta Ramadhani</h3>
-							<p><span style="color: #bf9b73">Putri Pertama dari</span><br>
-								<span class="parents-font">Bapak Mardianto</span>
+							<h3>Arbainah</h3>
+							<p><span style="color: #bf9b73">Putri dari</span><br>
+								<span class="parents-font">Bapak Apung</span>
 								<br>
-								<span class="parents-font">Ibu Boinem</span>
+								<span class="parents-font">Almh. Ibu lamsiah</span>
 							</p>
-							<div id="social-media-rehan">
-								<ul class="fh5co-social-icons">
-									<li><a target="_blank" href="https://instagram.com/tahtaramadhani"><i
-												class="icon-instagram-with-circle"></i></a></li>
-									<li><a target="_blank" href="https://facebook.com/tahtaramadhani99"><i
-												class="icon-facebook-with-circle"></i></a></li>
-								</ul>
-							</div>
 						</div>
 					</div>
 					<p class="heart text-center"><i class="icon-heart2"></i></p>
 					<div class="couple-half">
-						<div class="bride">
-							<img src="images/HairulLana.jpg" alt="groom" class="img-responsive">
-						</div>
 						<div class="desc-bride">
-							<h3>Hairul Lana</h3>
-							<p><span style="color: #bf9b73">Putra Pertama dari</span><br>
-								<span class="parents-font">Bapak Tosan</span>
+							<h3>Herdi</h3>
+							<p><span style="color: #bf9b73">Putra dari</span><br>
+								<span class="parents-font">Bapak Atin</span>
 								<br>
-								<span class="parents-font">Ibu Sunariyah</span>
+								<span class="parents-font">Ibu Salamah</span>
 							</p>
-							<div id="social-media-molid">
-								<ul class="fh5co-social-icons">
-									<li><a target="_blank" href="https://instagram.com/hairullana_"><i
-												class="icon-instagram-with-circle"></i></a></li>
-									<li><a target="_blank" href="https://facebook.com/hairullana99"><i
-												class="icon-facebook-with-circle"></i></a></li>
-								</ul>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -234,22 +212,17 @@
 								<h3 style="font-family: 'Oswald', Arial, serif;">Akad Nikah</h3>
 								<div class="event-col">
 									<i class="icon-clock"></i>
-									<span>10:00</span>
-									<span>11:00</span>
+									<span>08:00</span>
+									<span>selesai</span>
 								</div>
 								<div class="event-col">
 									<i class="icon-calendar"></i>
-									<span>Minggu</span>
-									<span class="tanggal">05 Mei 2024</span>
+									<span>Kamis</span>
+									<span class="tanggal">12 Juni 2025</span>
 								</div>
-								<p style="font-family: 'Courgette', Arial, serif">Alamat : Jl. Sultan Serdang Pasar VI
-									Gg. Madrasah Lorong III, Tanjung Morawa, Deli Serdang, Sumatera Utara</p>
-
-								<a href="https://maps.app.goo.gl/fJaKutJbRXfp7F8S9" target="_blank"
+								<p style="font-family: 'Courgette', Arial, serif">Alamat : Dusun Patinggen1 RT09 RW02 Desa Karangpawitan Kecamatan Padaherang Kabupaten Pangandaran</p>
+								<a href="https://maps.app.goo.gl/rX9Q5CajNDRizigc6" target="_blank"
 									class="btn btn-primary">Penunjuk Lokasi <i class="icon-map2"></i></a>
-									<br>
-								<a href="https://instagram.com/hairullana_" target="_blank"
-									class="btn btn-danger">Live Instagram <i class="icon-instagram"></i></a>
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6 text-center">
@@ -257,21 +230,17 @@
 								<h3 style="font-family: 'Oswald', Arial, serif;">Resepsi Nikah</h3>
 								<div class="event-col">
 									<i class="icon-clock"></i>
-									<span>11:30</span>
-									<span>Selesai</span>
+									<span>08:00</span>
+									<span>selesai</span>
 								</div>
 								<div class="event-col">
 									<i class="icon-calendar"></i>
-									<span>Minggu</span>
-									<span class="tanggal">05 Mei 2024</span>
+									<span>Kamis</span>
+									<span class="tanggal">12 Juni 2025</span>
 								</div>
-								<p style="font-family: 'Courgette', Arial, serif">Alamat : Jl. Sultan Serdang Pasar VI
-									Gg. Madrasah Lorong III, Tanjung Morawa, Deli Serdang, Sumatera Utara</p>
-
-								<a href="https://maps.app.goo.gl/fJaKutJbRXfp7F8S9" target="_blank"
+								<p style="font-family: 'Courgette', Arial, serif">Alamat : Dusun Patinggen1 RT09 RW02 Desa Karangpawitan Kecamatan Padaherang Kabupaten Pangandaran</p>
+								<a href="https://maps.app.goo.gl/rX9Q5CajNDRizigc6" target="_blank"
 									class="btn btn-primary">Penunjuk Lokasi <i class="icon-map2"></i></a>
-									<br>
-								<a class="btn btn-outline"><s>Live Instagram <i class="icon-instagram"></i></s></a>
 							</div>
 						</div>
 					</div>
@@ -382,33 +351,6 @@
 				</div>
 			</div>
 		</div>
-
-		<div id="fh5co-testimonial"
-			style="background: url('images/background/repeat-background/so-white.png'); background-repeat:repeat; border-top: 1px solid #f2f2f2">
-			<img height="400" class="flower-bukutamu-right" style="right: 0;top: 0;position: absolute;"
-				src="images/background/flowers/top-right-3.svg">
-			<img height="400" class="flower-bukutamu-left" style="position: absolute; left: 0; bottom: 0"
-				src="images/background/flowers/bottom-left-3.svg">
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Buku Tamu & Ucapan</h2>
-						<span style="color: #bf9b73">Doa Restu Anda merupakan karunia yang sangat berarti bagi
-							kami.</span>
-					</div>
-				</div>
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2">
-						<div class="list-group"></div>
-					</div>
-				</div>
-
-				<iframe
-					src="https://docs.google.com/forms/d/e/1FAIpQLSdBtIKTuKYTyyPE7JorUptkt1TUsLFSVjONMqBymiTHKIdYMw/viewform?embedded=true"
-					width="100%" height="" frameborder="0" marginheight="0" marginwidth="0"
-					style="min-height:98vh">Loading…</iframe>
-			</div>
-		</div>
 		<footer id="fh5co-footer" role="contentinfo"
 			style="background: url('images/background/repeat-background/witewall_3.png'); background-repeat:repeat ">
 			<div class="container">
@@ -418,28 +360,13 @@
 					src="images/background/flowers/bottom-left-1.svg">
 				<div class="row copyright animate-box">
 					<div class="col-md-12 text-center">
-						<p>
-							Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i <b
+						<p>Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i <b
 								class="nama-undangan"></b> berkenan hadir dan memberikan doa restu.
 							<br>Atas kehadiran dan doa restunya, kami mengucapkan terima kasih.
 						<h3 style="color: #bf9b73">Wassalamu'alaikum Wr. Wb.</h3>
 						Jazakumullahu Khairan
 						</p>
-						<img src="images/CoupleFlower.png" width="100" height="100">
-						<br>
 						<h1 style="font-family: 'Satisfy', Arial, serif">Herdi & Arbainah</h1>
-						<p>
-						<ul class="fh5co-social-icons">
-							<li><a target="_blank" href="mailto:hairullana99@gmail.com"><i class="icon-mail"></i></a>
-							</li>
-							<li><a target="_blank" href="https://hairullana.github.io"><i class="icon-globe"></i></a>
-							</li>
-							<li><a target="_blank" href="https://github.com/hairullana"><i class="icon-github"></i></a>
-							</li>
-							<li><a target="_blank" href="https://www.linkedin.com/in/hairullana"><i
-										class="icon-linkedin"></i></a></li>
-						</ul>
-						</p>
 					</div>
 				</div>
 
@@ -491,8 +418,8 @@
 		}
 
 		// HITUNG MUNDUR
-		day = 5; month = 5 - 1; year = 2024;
-		hour = 10; minute = 0;
+		day = 12; month = 6 - 1; year = 2025;
+		hour = 8; minute = 0;
 		var d = new Date(year, month, day, hour, minute, 0, 0);
 		simplyCountdown('.simply-countdown-wedding', {
 			year: d.getFullYear(),

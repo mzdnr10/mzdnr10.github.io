@@ -115,7 +115,7 @@
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 							<h1>Herdi & Arbainah</h1>
-							<p style="margin-bottom: 0">Kepada <div class="nama-tamu" id="tamu"></div><b class="nama-undangan"></b></p>
+							<div id="undangan"></div>
 							<p>Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.</p>
 
 							<button class="btn btn-primary" id="open-invitation">Buka Undangan</button>
@@ -405,46 +405,26 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
 
 	<script>
-		var urlParams = new URLSearchParams(window.location.search);
-        var nama1 = urlParams.get('nama1');
-        var nama2 = urlParams.get('nama2');
-        var tamuElement = document.getElementById('tamu');
+        // Ambil parameter dari URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const nama1 = urlParams.get('nama1') || "";
+        const nama2 = urlParams.get('nama2') || "";
 
-        // Gabungkan nama dengan logika "&"
-        let tampilanNama = "";
-        if (nama1 && nama2) {
-            tampilanNama = `${nama1} & ${nama2}`;
-        } else if (nama1) {
-            tampilanNama = nama1;
-        } else if (nama2) {
-            tampilanNama = nama2; // Jika hanya nama2 yang ada
-        } else {
-            tampilanNama = "Tamu Undangan"; // Default jika tidak ada parameter
-        }
+        // Gabungkan nama1 & nama2 dengan separator "&" jika ada
+        const namaTamu = [nama1, nama2].filter(Boolean).join(" & ");
 
-        tamuElement.textContent = tampilanNama;
-		// Ambil parameter dari URL
-        var urlParams = new URLSearchParams(window.location.search);
-        var nama1 = urlParams.get('nama1') || "Nama Pertama";
-        var nama2 = urlParams.get('nama2') || "Nama Kedua";
+        // Buat elemen <p> dan masukkan ke dalam #undangan
+        const undanganHTML = `
+            <p style="margin-bottom: 0">
+                Kepada ${namaTamu || "Tamu Undangan"}
+                <b class="nama-undangan"></b>
+            </p>
+        `;
 
-        // Tampilkan di HTML
-        document.getElementById("nama1").textContent = nama1;
-        document.getElementById("nama2").textContent = nama2;
+        document.getElementById("undangan").innerHTML = undanganHTML;
+    </script>
 
-		
-		// NAMA UNDANGAN
-		var url = window.location.href;
-		var urlObj = new URL(url);
-		var namaUndangan = urlObj.searchParams.get("nama");
-		if (namaUndangan) {
-			namaUndangan = namaUndangan.toUpperCase();
-			var elements = document.getElementsByClassName("nama-undangan");
-			for (var i = 0; i < elements.length; i++) {
-				elements[i].innerHTML = namaUndangan;
-			}
-		}
-
+	<script>
 		// HITUNG MUNDUR
 		day = 12; month = 6 - 1; year = 2025;
 		hour = 8; minute = 0;

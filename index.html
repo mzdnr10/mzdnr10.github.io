@@ -77,10 +77,10 @@
 		<div id="floating-button" class="float">
 			<div class="control-center open">
 				<div class="audio-play">
-				  <div id="audio-container1" data-src="images/audio.mp3">
-				    <img id="audio-icon1" src="" />
-				    <audio id="audio-player1" preload="auto"></audio>
-				  </div>
+					<div id="audio-container1" data-src="images/audio.mp3">
+						<img id="audio-icon1" src="" />
+						<audio id="audio-player1" preload="auto"></audio>
+					</div>
 				</div>
 				<ul class="right-sidebar">
 					<!--gallery-->
@@ -151,7 +151,7 @@
 						<div class="simply-countdown simply-countdown-wedding"></div>
 						<br>
 						<p>
-							<a href="https://calendar.app.google/qQryXMm8g4E3j2fbA" target="_blank"
+							<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Undangan+Pernikahan+Herdi+%26+Arbainah&dates=20250612T080000&details=Acara+pernikahan+Herdi+dan+Arbainah+di+Pangandaran&location=Dusun+Mangunjaya,+Pangandaran&sf=true&output=xml" target="_blank"
 								class="btn btn-primary btn-sm">Save the date</a><br>
 							<i style="font-size: 15px">*Klik tombol ini untuk menyimpan tanggal pada google kalender</i>
 						</p>
@@ -204,7 +204,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-						<h2>Save The Date <a href="https://calendar.app.google/qQryXMm8g4E3j2fbA"
+						<h2>Save The Date <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Undangan+Pernikahan+Herdi+%26+Arbainah&dates=20250612T080000&details=Acara+pernikahan+Herdi+dan+Arbainah+di+Pangandaran&location=Dusun+Mangunjaya,+Pangandaran&sf=true&output=xml"
 								class="btn btn-info"><i class="icon-download2"></i></a></h2>
 					</div>
 				</div>
@@ -250,6 +250,48 @@
 				</div>
 			</div>
 		</div>
+		<div id="fh5co-gift">
+		  <div class="container">
+		    <div class="row animate-box">
+		      <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+		        <h2>Wedding Gift</h2>
+		        <p style="color: #bf9b73">Tanpa mengurangi rasa hormat kami bagi tamu yang ingin mengirimkan hadiah kepada kedua mempelai dapat mengirimkannya melalui:</p>
+			
+		        <button class="btn btn-primary mt-3" data-bs-toggle="collapse" data-bs-target="#giftSection">Klik di sini</button>
+		      </div>
+		  
+		      <div class="col-md-8 col-md-offset-2 text-center">
+		        <div id="giftSection" class="collapse mt-4">
+				
+		          <div class="item-protocol card shadow p-4 mb-3">
+		            <div class="icon mb-2">
+		              <img src="images/bri.png" alt="BRI" width="100">
+		            </div>
+		            <div class="description">
+		              <h3 class="mb-1">BRI - 400801050981537</h3>
+		              <p>Herdi</p>
+		              <button class="btn btn-outline-success copy-btn" data-copy="400801050981537">📋 Salin</button><br>
+		            </div>
+		          </div>
+
+				  <br>
+			  
+		          <div class="item-protocol card shadow p-4">
+		            <div class="description">
+		              <h3 class="mb-1">ALAMAT PENGIRIMAN HADIAH FISIK</h3>
+		              <p>Dusun Patinggen1 RT09 RW02 Desa Karangpawitan<br>
+		                Kecamatan Padaherang Kabupaten Pangandaran</p>
+						<a href="https://maps.app.goo.gl/rX9Q5CajNDRizigc6" target="_blank"
+									class="btn btn-primary">Penunjuk Lokasi <i class="icon-map2"></i></a>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<br>
+
 
 		<div id="fh5co-protocol">
 			<div class="container">
@@ -378,35 +420,54 @@
 	<script src="js/main.js"></script>
 
 	<script src="lib/lightgallery.js/dist/lightgallery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="lib/lightgallery.js/dist/plugins/thumbnail/lg-thumbnail.min.js"></script>
 	<script src="lib/lightgallery.js/dist/plugins/autoplay/lg-autoplay.min.js"></script>
 	<script src="lib/lightgallery.js/dist/plugins/fullscreen/lg-fullscreen.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
 
 	<script>
-        // Ambil parameter dari URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const nama1 = urlParams.get('nama1') || "";
-        const nama2 = urlParams.get('nama2') || "";
+		// Ambil parameter dari URL
+		const urlParams = new URLSearchParams(window.location.search);
+		const nama1 = urlParams.get('nama1') || "";
+		const nama2 = urlParams.get('nama2') || "";
 
-        // Gabungkan nama1 & nama2 dengan separator "&" jika ada
-        const namaTamu = [nama1, nama2].filter(Boolean).join(" & ");
+		// Gabungkan nama1 & nama2 dengan separator "&" jika ada
+		const namaTamu = [nama1, nama2].filter(Boolean).join(" & ");
 
-        // Buat elemen <p> dan masukkan ke dalam #undangan
-        const undanganHTML = `
+		// Buat elemen <p> dan masukkan ke dalam #undangan
+		const undanganHTML = `
             <p style="margin-bottom: 0">
                 Kepada ${namaTamu || "Tamu Undangan"}
                 <b class="nama-undangan"></b>
             </p>
         `;
 
-        document.getElementById("undangan").innerHTML = undanganHTML;
-    </script>
+		document.getElementById("undangan").innerHTML = undanganHTML;
+	</script>
+
+	<script>
+	  document.querySelectorAll('.copy-btn').forEach(function (btn) {
+	    btn.addEventListener('click', function () {
+	      const text = btn.getAttribute('data-copy');
+	      navigator.clipboard.writeText(text).then(function () {
+	        btn.textContent = '✅ Tersalin!';
+	        setTimeout(() => {
+	          btn.textContent = '📋 Salin';
+	        }, 1500);
+	      });
+	    });
+	  });
+	</script>
+
 
 	<script>
 		// HITUNG MUNDUR
-		day = 12; month = 6 - 1; year = 2025;
-		hour = 8; minute = 0;
+		day = 12;
+		month = 6 - 1;
+		year = 2025;
+		hour = 8;
+		minute = 0;
 		var d = new Date(year, month, day, hour, minute, 0, 0);
 		simplyCountdown('.simply-countdown-wedding', {
 			year: d.getFullYear(),
@@ -419,7 +480,7 @@
 			// enableUtc: true
 		});
 
-		$('#open-invitation').click(function () {
+		$('#open-invitation').click(function() {
 			$('#overlay').addClass('hide-overlay');
 			/*yang bagian floating button ada animasinya tapi karena ketutup dulu sama overlay jadinya gak nampak*/
 			/*pengen pas di klik buka undangan baru jalan animasinya*/
@@ -430,48 +491,49 @@
 		});
 
 		function scrollToElement(el) {
-			$("html, body").animate({ scrollTop: $(`#${el}`).offset().top }, 1000);
+			$("html, body").animate({
+				scrollTop: $(`#${el}`).offset().top
+			}, 1000);
 		}
-
 	</script>
 
 	<script>
-	  document.addEventListener("DOMContentLoaded", function () {
-	    var container = document.getElementById("audio-container1");
-	    var audio = document.getElementById("audio-player1");
-	    var icon = document.getElementById("audio-icon1");
-	    var buka = document.getElementById("open-invitation");
+		document.addEventListener("DOMContentLoaded", function() {
+			var container = document.getElementById("audio-container1");
+			var audio = document.getElementById("audio-player1");
+			var icon = document.getElementById("audio-icon1");
+			var buka = document.getElementById("open-invitation");
 
-	    // Set source audio dari data-src
-	    audio.src = container.dataset.src;
-		audio.volume = 0.3; // atur volume jadi 30%
+			// Set source audio dari data-src
+			audio.src = container.dataset.src;
+			audio.volume = 0.3; // atur volume jadi 30%
 
-	    // Set gaya
-	    container.style.cssText = 'width:20px;margin:0 auto;cursor:pointer;display:block';
+			// Set gaya
+			container.style.cssText = 'width:20px;margin:0 auto;cursor:pointer;display:block';
 
-	    // Icon play/pause default
-	    icon.src = "images/audio/pause.png";
+			// Icon play/pause default
+			icon.src = "images/audio/pause.png";
 
-	    // Toggle audio play/pause saat div diklik
-	    container.onclick = function () {
-	      if (audio.paused) {
-	        audio.play();
-	        icon.src = "images/audio/pause.png";
-	      } else {
-	        audio.pause();
-	        icon.src = "images/audio/play.png";
-	      }
-	    };
+			// Toggle audio play/pause saat div diklik
+			container.onclick = function() {
+				if (audio.paused) {
+					audio.play();
+					icon.src = "images/audio/pause.png";
+				} else {
+					audio.pause();
+					icon.src = "images/audio/play.png";
+				}
+			};
 
-	    // Saat audio selesai, ubah ke tombol play lagi
-	    audio.addEventListener("ended", function () {
-	      icon.src = "images/audio/play.png";
-	    });
+			// Saat audio selesai, ubah ke tombol play lagi
+			audio.addEventListener("ended", function() {
+				icon.src = "images/audio/play.png";
+			});
 
-	    buka.addEventListener("click", function () {
-	        audio.play();
-	    });
-	  });
+			buka.addEventListener("click", function() {
+				audio.play();
+			});
+		});
 	</script>
 
 
